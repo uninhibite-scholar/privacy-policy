@@ -12,6 +12,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fff;
         }
         h1 {
             color: #2c3e50;
@@ -24,9 +25,12 @@
         }
         .section {
             margin-bottom: 30px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
         }
         .highlight-box {
-            background-color: #f8f9fa;
+            background-color: #e8f4f8;
             border-left: 4px solid #3498db;
             padding: 15px;
             margin: 20px 0;
@@ -43,6 +47,12 @@
         }
         th {
             background-color: #f2f2f2;
+        }
+        .paid-feature {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
         }
     </style>
 </head>
@@ -74,6 +84,11 @@
                 <td>产品体验优化</td>
                 <td>加密存储</td>
             </tr>
+            <tr>
+                <td>交易数据</td>
+                <td>应用内购买验证和记录</td>
+                <td>Apple处理，我们仅接收状态</td>
+            </tr>
         </table>
     </div>
 
@@ -85,6 +100,20 @@
             <li>不会将个人健康信息传输至任何服务器</li>
             <li>通过Apple应用内购买产生的交易数据由Apple处理</li>
         </ul>
+        
+        <div class="paid-feature">
+            <h3>💎 应用内购买说明</h3>
+            <p>本应用提供以下付费功能：</p>
+            <ul>
+                <li><strong>高级健康分析</strong> - 深度健康趋势分析和个性化建议</li>
+                <li><strong>自定义主题</strong> - 额外的界面主题和个性化选项</li>
+                <li><strong>数据导出功能</strong> - 完整的健康数据导出和报告生成</li>
+            </ul>
+            
+            <p><strong>支付处理：</strong>所有支付交易通过Apple的App Store处理，我们不收集或存储任何支付信息（如信用卡号码等）。Apple会向我们提供交易状态和购买验证信息，但不包括个人支付详情。</p>
+            
+            <p><strong>购买恢复：</strong>如果您重新安装应用，可以通过Apple的"恢复购买"功能恢复您之前购买的付费功能。</p>
+        </div>
         
         <div class="highlight-box">
             <h3>特别声明</h3>
@@ -113,6 +142,7 @@
             <li>本地数据加密（使用iOS/Android系统级加密）</li>
             <li>定期安全审计</li>
             <li>最小权限原则（仅请求必要权限）</li>
+            <li>付费功能状态验证通过Apple安全API进行</li>
         </ul>
     </div>
 
@@ -127,7 +157,12 @@
             </tr>
             <tr>
                 <td>Apple Inc.</td>
-                <td>应用内支付</td>
+                <td>应用内支付、交易处理</td>
+                <td><a href="https://www.apple.com/legal/privacy/" target="_blank">查看</a></td>
+            </tr>
+            <tr>
+                <td>Apple Inc.</td>
+                <td>数据存储（iCloud同步，如启用）</td>
                 <td><a href="https://www.apple.com/legal/privacy/" target="_blank">查看</a></td>
             </tr>
         </table>
@@ -139,16 +174,18 @@
         <ul>
             <li><strong>访问权</strong>：随时导出本地健康数据</li>
             <li><strong>更正权</strong>：修改不准确的信息</li>
-            <li><strong>删除权</strong>：清除所有应用数据</li>
+            <li><strong>删除权</strong>：清除所有应用数据（包括本地健康记录）</li>
             <li><strong>撤回同意</strong>：通过设备设置管理权限</li>
+            <li><strong>购买管理</strong>：通过Apple设置管理应用内购买和订阅</li>
         </ul>
     </div>
 
     <div class="section highlight-box">
         <h2>6. 联系我们</h2>
-        <p>如对隐私政策有任何疑问，请通过以下方式联系：</p>
+        <p>如对隐私政策或付费功能有任何疑问，请通过以下方式联系：</p>
         <p>📧 <strong>邮箱</strong>：1155256931@link.cuhk.edu.hk</p>
         <p>⏰ <strong>响应时间</strong>：我们将在48小时内回复</p>
+        <p>💰 <strong>购买支持</strong>：应用内购买相关问题请通过Apple官方渠道处理</p>
     </div>
 
     <div class="section">
@@ -159,6 +196,18 @@
             <li>更新日志公示</li>
             <li>官网公告</li>
         </ul>
+        <p><strong>付费功能变更</strong>：如果付费功能的内容或价格发生变更，我们会通过应用更新通知用户。</p>
+    </div>
+
+    <div class="section">
+        <h2>8. 退款政策</h2>
+        <p>所有应用内购买均通过Apple App Store处理，退款请求需要联系Apple客服：</p>
+        <ul>
+            <li>访问 <a href="https://getsupport.apple.com" target="_blank">Apple支持页面</a></li>
+            <li>选择"账单和订阅" → "申请退款"</li>
+            <li>按照指引提交退款申请</li>
+        </ul>
+        <p>请注意：数字商品一旦购买，除非符合Apple的退款政策，否则通常不予退款。</p>
     </div>
 </body>
 </html>
